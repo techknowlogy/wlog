@@ -1,0 +1,11 @@
+# Site settings
+title: tech{know}logy blog
+email: we.are.tknow@gmail.com
+description: tech{know}logy club's blog
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://techknowlogy.github.io/wlog" # the base hostname & protocol for your site
+twitter_username: WeAreTknow
+github_username:  techknowlogy
+
+# Build settings
+markdown: kramdown
