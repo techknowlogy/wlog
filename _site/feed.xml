@@ -1,71 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>t{know}</title>
-    <description>Follow for updates at the Tech{know}logy Club at Amrita, Coimbatore
-</description>
-    <link>tknow.github.io/</link>
-    <atom:link href="tknow.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 29 Apr 2015 21:12:23 +0530</pubDate>
-    <lastBuildDate>Wed, 29 Apr 2015 21:12:23 +0530</lastBuildDate>
+    <title>tech{know}logy blog</title>
+    <description>techknowlogy club&#39;s blog</description>
+    <link>http://techknowlogy.github.io//wlog/</link>
+    <atom:link href="http://techknowlogy.github.io//wlog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Wed, 29 Apr 2015 21:54:42 +0530</pubDate>
+    <lastBuildDate>Wed, 29 Apr 2015 21:54:42 +0530</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
-        <title>Let&#39;s Meet Up Before The Summer Break</title>
-        <description>&lt;p&gt;Hello,&lt;/p&gt;
+        <title>Hello World!</title>
+        <description>&lt;p&gt;We’re proud to announce the tech{know}logy club’s blog!&lt;/p&gt;
 
-&lt;p&gt;We’ve been dormant for most part of this year. Sincere apologies. There’s no making up for it.&lt;/p&gt;
+&lt;p&gt;Is it co-incidental that Sarup’s current cow says the following fortune?&lt;/p&gt;
 
-&lt;p&gt;But just for fun, we thought before we come to the end of the semester, let’s meet and show juniors some nice miniprojects to spark some motivation for learning/doing interesting things over the summer.&lt;/p&gt;
+&lt;pre&gt;
 
-&lt;p&gt;We’re mainly looking for first and second year students to attend.&lt;/p&gt;
+[sarupbanskota@banas wlog]$ fortune | cowsay
+ ______________________________________ 
+/ Did you know ...                     \
+|                                      |
+\ That no-one ever reads these things? /
+ -------------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
 
-&lt;p&gt;Why you might want to attend?&lt;/p&gt;
+&lt;/pre&gt;
 
-&lt;p&gt;We’re planning to show you some miniprojects which help you do useful things.&lt;/p&gt;
-
-&lt;p&gt;Well, you’re going to spend close to two months of vacation at home, and we think that’s a very good time to start learning something new. &lt;/p&gt;
-
-&lt;p&gt;No. Nobody’s saying you must study in the holidays. You should do what you like, which is something that will satisfy you. We want to help you see code in that light. Feel the satisfaction of making something with code that makes things work, makes things easier.&lt;/p&gt;
-
-&lt;p&gt;The holiday is also some time when you have less pressure and more time to yourself, when you can think clearly, and be relaxed. All those things are condusive to learning and exploring.&lt;/p&gt;
+&lt;p&gt;Prove us wrong :-)&lt;/p&gt;
 </description>
-        <pubDate>Sun, 26 Apr 2015 02:26:00 +0530</pubDate>
-        <link>tknow.github.io/general/update/2015/04/26/let's-meet-up-before-the-summer-break.html</link>
-        <guid isPermaLink="true">tknow.github.io/general/update/2015/04/26/let's-meet-up-before-the-summer-break.html</guid>
+        <pubDate>Sat, 04 Oct 2014 09:04:06 +0530</pubDate>
+        <link>http://techknowlogy.github.io//wlog/announcement/2014/10/04/helloworld.html</link>
+        <guid isPermaLink="true">http://techknowlogy.github.io//wlog/announcement/2014/10/04/helloworld.html</guid>
         
         
-        <category>general</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve --watch&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Sun, 26 Apr 2015 01:05:00 +0530</pubDate>
-        <link>tknow.github.io/jekyll/update/2015/04/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">tknow.github.io/jekyll/update/2015/04/26/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
+        <category>announcement</category>
         
       </item>
     

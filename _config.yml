@@ -2,7 +2,7 @@
 title: tech{know}logy blog
 email: we.are.tknow@gmail.com
 description: techknowlogy club's blog
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "/wlog" # the subpath of your site, e.g. /blog/
 url: "http://techknowlogy.github.io/" # the base hostname & protocol for your site
 twitter_username: WeAreTknow
 github_username:  techknowlogy
