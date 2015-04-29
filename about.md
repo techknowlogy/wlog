@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-tech club's about page. Space for an awesome thing or two.
+Amrita Tech{know}logy Club at Amrita School of Engineering, Coimbatore.
+
+This is where we plan to document the awesome things we do.
