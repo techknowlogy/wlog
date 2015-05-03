@@ -61,20 +61,31 @@
   </header>
 
   <article class="post-content">
-    <p>Date: Apr 27, 2015, Wednesday</p>
+    <h3 id="date-apr-27-2015-wednesday">Date: Apr 27, 2015, Wednesday</h3>
 
-<p>Place: IT Lab 6, ASE, Coimbatore</p>
+<h3 id="place-it-lab-6-ase-coimbatore">Place: IT Lab 6, ASE, Coimbatore</h3>
 
-<p>Plan for the session: To introduce the different levels of thought and work between the inception of an idea and it’s implementation, and to familiarise attendees with the computational thinking.</p>
+<p><strong>Plan for the session</strong>:       </p>
 
-<p>Tools/programs planned to use: Heavy usage of the Python programming language for demonstrations, a couple of programs to demonstrate linking between thoughts and solutions on paper to those on the computer.</p>
+<p>To introduce the different levels of thought and work between the inception of an idea and it’s implementation, and to familiarise attendees with the computational thinking involved in the process.</p>
 
-<p>The problem: People who are generally afraid of programming and otherwise active in terms of visualising ideas and thoughts are afraid so because of a divide between the way they think naturally and the way the need to understand how a computer thinks[?]. A significant portion of beginners are taught programming with an emphasis on the syntactical working of a particular language. Due importance which must be given to the logical constructs and thought patterns is often found lacking. The aim of this session was to try and identify such symptoms and help have fun while thinking of ideas and programming.</p>
+<p><strong>Tools/programs planned to use</strong>:      </p>
 
-<p>Programming is not the goal, it can be an effective means to reach your goal, provided you learn to use your tools well.</p>
+<p>Heavy usage of the Python programming language for demonstrations, a couple of programs to demonstrate linking between thoughts and solutions on paper to those on the computer.</p>
 
-<p>Let’s get to work:
-Problem 1: A basic problem involving using the built-in os module in python. The program involved reorganising files in a directory by renaming them according to some predefined rules. [Courtesy Udacity’s course on Introductory Programming in Python for the idea]</p>
+<p><strong>The problem</strong>:        </p>
+
+<p>People who are generally afraid of programming and otherwise active in terms of visualising ideas and thoughts are afraid so because of a divide between the way they think naturally and the way the need to understand how a computer thinks[?]. A significant portion of beginners are taught programming with an emphasis on the syntactical working of a particular language. Due importance which must be given to the logical constructs and thought patterns is often found lacking. The aim of this session was to try and identify such symptoms and help have fun while thinking of ideas and programming.</p>
+
+<p><code>
+Programming is not the goal, it can be an effective means to reach your goal, provided you learn to use your tools well.
+</code></p>
+
+<p>Let’s get to work:</p>
+
+<p>Problem 1:</p>
+
+<p>A basic problem requiring usage of the built-in <a href="https://docs.python.org/2/library/os.html">os</a> module in python. The program involved reorganising files in a directory by renaming them according to some predefined rules. <a href="https://www.udacity.com/course/viewer#!/c-ud036/l-993460168/m-1015728603">Courtesy Udacity’s course on Introductory Programming in Python for the idea</a></p>
 
 <p>To start with, let’s say I have a message for you. The message is in the form of photos (.jpg files) inside a directory, each photo carrying one letter, or a space, or a period.</p>
 
@@ -82,13 +93,108 @@ Problem 1: A basic problem involving using the built-in os module in python. The
 
 <p>And to make things not so easy, I’ve scrambled the letters in the message by altering the filenames. Each filename has a random number prefix in front of the name of a city.</p>
 
-<p><img src="https://github.com/techknowlogy/techknowlogy.github.io/blob/master/master/2015-05-03/before_exec.png" alt="Before execution of the program" /></p>
+<p><img src="https://github.com/techknowlogy/techknowlogy.github.io/raw/master/images/2015-05-03/before_exec.png" alt="Before execution of the program" /></p>
 
 <p>The task in this problem was to rename all the files in a way that the random number prefixes are filtered, and the result is that the letters of the message are arranged in the order which was intended earlier.</p>
 
-<p><img src="https://github.com/techknowlogy/techknowlogy.github.io/blob/master/master/2015-05-03/after_exec.png" alt="After execution of the program" /></p>
+<p><img src="https://github.com/techknowlogy/techknowlogy.github.io/raw/master/images/2015-05-03/after_exec.png" alt="After execution of the program" /></p>
 
-<p>No big funda here. The main purpose of the program was to get you acquainted with certain important functions and the program flow in python. </p>
+<p>No big funda here. The main purpose of the program was to get you acquainted with certain important functions and the program flow in python.</p>
+
+<p>I asked the attendees to write their solution on paper first, and then code it.</p>
+
+<p>I told them how I would write similar steps for making the problem in the first place.</p>
+
+<div class="highlight"><pre><code class="language-text" data-lang="text">Solution
+1.read message letter by letter. For each letter, the
+following sequence of steps is followed:
+1.1. from the &quot;alphabet&quot; folder, the letter is copied to
+the &quot;message&quot; folder
+1.2. the name of the copied file must be such that the
+letter comes in its position according to the message.
+1.3. for this a list of names can be taken in alphabetical
+order and names can be assigned to files as they are copied
+the message is ready in a form that is readable by the
+viewer, we need to scramble the message
+
+2.scrambling the message
+well, I&#39;ll leave this for you to do :p</code></pre></div>
+
+<p>Anyway, the solution to the problem is a mere 10 lines of code</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">saved_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<span class="n">path_to_message</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">saved_path</span><span class="p">,</span><span class="s">&quot;msg&quot;</span><span class="p">)</span>
+
+<span class="n">file_list</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path_to_message</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">file_list</span>
+
+
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">path_to_message</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">file_name</span> <span class="ow">in</span> <span class="n">file_list</span><span class="p">:</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">file_name</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="s">&#39;0123456789&#39;</span><span class="p">))</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">saved_path</span><span class="p">)</span></code></pre></div>
+
+<p>Well, I haven’t included comments on purpose, look up the functions with an internet search to learn about what they do.</p>
+
+<p>We learnt quite some stuff from this relatively simple problem which will make thinking about the next one a little easier.</p>
+
+<p>To make a list, we learnt:</p>
+
+<blockquote>
+  <p>general python code structure</p>
+</blockquote>
+
+<blockquote>
+  <p>some new functions</p>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>os.getcwd() [to get the location of the current working directory]</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>os.listdir(path) [to list the items in a given directory]</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>os.chdir(path) [to change to a given directory]</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>os.rename(src, dest)</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>and more</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>using lists and loops in python</p>
+</blockquote>
+
+<p>The problem we examined and solved after this was concerning management of photos and eliminating duplicates to save space. Not too complicated, but complicated enough to learn new things from. I’ll write about that one soon.</p>
+
+<h3 id="references">References:</h3>
+
+<p><a href="https://docs.python.org/2/library/os.html">Python documentation for the OS module</a></p>
+
+<p><a href="https://docs.python.org/2">Python documentation in general</a></p>
+
+<p><a href="https://www.udacity.com/course/viewer#!/c-ud036/l-993460168/m-1015728603">Programming Foundations in Python</a>, the online course on Udacity from which I got the photo-scrambling idea</p>
 
   </article>
 
