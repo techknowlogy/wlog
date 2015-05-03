@@ -27,10 +27,10 @@ Keep in mind that the photos in the directory are sorted by filenames. So, I've 
 
 And to make things not so easy, I've scrambled the letters in the message by altering the filenames. Each filename has a random number prefix in front of the name of a city.
 
-![Before execution of the program](https://github.com/techknowlogy/techknowlogy.github.io/blob/master/master/2015-05-03/before_exec.png)
+![Before execution of the program](https://github.com/techknowlogy/techknowlogy.github.io/blob/master/images/2015-05-03/before_exec.png)
 
 The task in this problem was to rename all the files in a way that the random number prefixes are filtered, and the result is that the letters of the message are arranged in the order which was intended earlier.
 
-![After execution of the program](https://github.com/techknowlogy/techknowlogy.github.io/blob/master/master/2015-05-03/after_exec.png)
+![After execution of the program](https://github.com/techknowlogy/techknowlogy.github.io/blob/master/images/2015-05-03/after_exec.png)
 
 No big funda here. The main purpose of the program was to get you acquainted with certain important functions and the program flow in python. 
