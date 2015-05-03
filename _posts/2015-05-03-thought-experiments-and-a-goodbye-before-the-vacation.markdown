@@ -52,7 +52,7 @@ I asked the attendees to write their solution on paper first, and then code it.
 I told them how I would write similar steps for making the problem in the first place.
 
 {% highlight text %}
-Solution
+How I made the problem:
 1.read message letter by letter. For each letter, the
 following sequence of steps is followed:
 1.1. from the "alphabet" folder, the letter is copied to
